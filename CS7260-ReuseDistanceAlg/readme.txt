@@ -1,5 +1,7 @@
 Based on the paper AIm - Calculating Stack Distances Efficiently
 
+The tree-based solution has a time complexity of O(NlogN) where N = length of the trace file
+
 Source Code Breakdown
 
 Sources:
