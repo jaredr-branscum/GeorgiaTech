@@ -1,3 +1,3 @@
-# GeorgieaTech
+# Georgia Tech
 Georgia Tech course projects
-* CS6456-UIBubbleChat: Group Semester Project with Sean Lu
+* CS6456: UI Bubble Chat Semester Group Project with Sean Lu
