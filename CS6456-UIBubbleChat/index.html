@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Messaging App</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="toggle">Paint</button>
+	<div id="Threading">
+        <div class="container">
+            <div class="contbody">
+                <div class="msg" id="msg1">
+                    <div class="text" id="text1">Hello</div>
+                </div>
+                <div class="msg" id="msg2">
+                    <div class="text" id="text2">What's up</div>
+                </div>
+                <div class="msg" id="msg3">
+                    <div class="text" id="text3">Nothing much</div>
+                </div>
+                <div class="msg" id="msg4">
+                    <div class="text" id="text4">What day is it?</div>
+                </div>
+                <div class="msg" id="msg5">
+                    <div class="text" id="text5">Tuesday</div>
+                </div>
+                <div class="msg" id="msg6">
+                    <div class="text" id="text6">No, it's actually Wednesday</div>
+                </div>
+                <div class="msg" id="msg7">
+                    <div class="text" id="text7">Really?</div>
+                </div>
+                <div class="msg" id="msg8">
+                    <div class="text" id="text8">He's right, it's Wednesday</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div style="float:left">write message...</div>
+            <i style="float:right" class="fa fa-paper-plane"></i>
+        </div>
+	</div>
+
+    <div id="paintbg" class="paintbg" style="display:none;">
+		<div id="sidebar" class="sidebar">
+			<div class="wheellabel">
+				<div class="colorwheel">
+					<img class="wheel" src="img/circle-cropped.png" alt="" />
+				</div>
+			</div>
+			<div class="colorPicking">
+				<div class="colorButtons">
+					Color
+					<input type="color" id="colorpicker" value="#0000FF" class="colorpicker">
+				</div>
+				<div class="colorButtons">
+					Second Color
+					<input type="color" id="secondcolorpicker" value="#FF0000" class="colorpicker">
+				</div>
+				<div class="colorButtons">
+					Bg Color
+					<input type="color" value="#ffffff" id="bgcolorpicker" class="colorpicker">
+				</div>
+				<div class ="colorButtons">
+					Clear
+					<button id="clear" class="btn btn-danger colorpicker"> <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span></button>
+				</div>
+			</div>
+			<div class="toolsButtons">
+
+			</div>
+			
+			<div class="extra">
+				<a id="saveToImage" class="btn btn-warning" style="margin-top: 30px">Apply</a>
+			</div>
+		</div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
