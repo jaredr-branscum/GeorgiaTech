@@ -1,0 +1,160 @@
+
+.container {
+    max-height: 88vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg {
+    padding: 1px 0px 1px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    touch-action: none;
+    user-select: none;
+}
+
+.contbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.text {
+    position: relative;
+    padding: 20px 0px 20px 15px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    width: 100%;
+}
+
+.selectable {
+    border: 1px solid rgb(86, 180, 239);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 169, 236, 0.493);
+}
+
+.contact {
+    margin-top: 15px;
+    float: left;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.bottom {
+    color: #A9A9A9;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    position: fixed;
+    bottom: 10px;
+    width: 91%;
+}
+
+html, body, {
+    width:100%;
+	height:100%;
+}
+
+.wheellabel {
+	display: block;
+	position:relative;
+	width:100%;
+	height:60%;
+	padding:25px;
+    background-image: url('../img/labels.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.colorwheel {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	touch-action:none;
+}
+
+.wheel {
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  padding:5px;
+  display:block;
+  width:20vh;
+  height:20vh;
+  z-index: 1;
+}
+
+.overlap {
+    display: none;
+}
+
+.thread {
+    outline: 2px solid blue;
+}
+
+.colorButtons {
+	display: block;
+	margin: 10px;
+	width:100%;
+}
+
+div#sidebar {
+ 	position: relative;
+	left: 0px;
+	width: 350px;
+	padding: 20px 20px 20px 20px;
+	z-index:10;
+}
+
+canvas#canvas {
+ 	display: block;
+	position: relative;
+	top:0;
+	margin:15px 0px 0px 3px;
+ 	touch-action: none;
+	transform: rotate(0);
+	transform-origin: center center;
+	user-select: none;
+	touch-action: none;
+}
+
+.paintbg {
+    display: table;
+	width:50%;
+	height:100%;
+}
+
+.colorPicking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.input-group {
+	margin-bottom: 10px;
+}
+
+.toolsButtons .btn{
+	width: 100%;
+	display: table;
+}
+
+.colorpicker {
+	background: transparent;
+	height: 40px;
+}
